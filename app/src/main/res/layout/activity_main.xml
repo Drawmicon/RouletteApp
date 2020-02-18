@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/roulette"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/rouletteText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/betTwo"
+        android:layout_width="88dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="$0"
+        android:inputType="textPersonName"
+        android:text="@string/betEvenText"
+        app:layout_constraintBottom_toTopOf="@+id/betLow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/betButton"
+        app:layout_constraintVertical_bias="0.902" />
+
+    <EditText
+        android:id="@+id/betLow"
+        android:layout_width="88dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="$0"
+        android:inputType="textPersonName"
+        android:text="@string/betLowText"
+        app:layout_constraintBottom_toTopOf="@+id/betMid"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/betMid"
+        android:layout_width="88dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="$0"
+        android:inputType="textPersonName"
+        android:text="@string/betMidText"
+        app:layout_constraintBottom_toTopOf="@+id/betHigh"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/betHigh"
+        android:layout_width="88dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="108dp"
+        android:ems="10"
+        android:hint="$0"
+        android:inputType="textPersonName"
+        android:text="@string/betHighText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/betLowLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/betLowLabelText"
+        app:layout_constraintBottom_toTopOf="@+id/betMidLabel"
+        app:layout_constraintEnd_toStartOf="@+id/betLow"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toEndOf="@+id/betRed" />
+
+    <TextView
+        android:id="@+id/betMidLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:text="@string/betMidLabelText"
+        app:layout_constraintBottom_toTopOf="@+id/betHighLabel"
+        app:layout_constraintEnd_toStartOf="@+id/betMid"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toEndOf="@+id/betBlack" />
+
+    <TextView
+        android:id="@+id/betHighLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="116dp"
+        android:text="@string/betHighLabelText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/betHigh"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toEndOf="@+id/betOdd" />
+
+    <EditText
+        android:id="@+id/betOne"
+        android:layout_width="88dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="(1-36)"
+        android:inputType="textPersonName"
+        android:text="@string/betOneText"
+        app:layout_constraintBottom_toTopOf="@+id/betRed"
+        app:layout_constraintStart_toEndOf="@+id/betOneLabel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/betEven"
+        android:layout_width="88dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="228dp"
+        android:layout_marginBottom="68dp"
+        android:ems="10"
+        android:hint="$0"
+        android:inputType="textPersonName"
+        android:text="@string/betEvenText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toEndOf="@+id/betEvenLabel" />
+
+    <EditText
+        android:id="@+id/betRed"
+        android:layout_width="88dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
+        android:hint="$0"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/betRedText"
+        app:layout_constraintBottom_toTopOf="@+id/betBlack"
+        app:layout_constraintStart_toEndOf="@+id/betRedLabel" />
+
+    <EditText
+        android:id="@+id/betBlack"
+        android:layout_width="88dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="12dp"
+        android:hint="$0"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/betBlackText"
+        app:layout_constraintBottom_toTopOf="@+id/betOdd"
+        app:layout_constraintStart_toEndOf="@+id/betBlackLabel" />
+
+    <EditText
+        android:id="@+id/betOdd"
+        android:layout_width="88dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
+        android:hint="$0"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/betOddText"
+        app:layout_constraintBottom_toTopOf="@+id/betEven"
+        app:layout_constraintStart_toEndOf="@+id/betOddLabel" />
+
+    <TextView
+        android:id="@+id/betOneLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="36dp"
+        android:text="@string/betOneLabelText"
+        app:layout_constraintBottom_toTopOf="@+id/betRedLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/betRedLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="36dp"
+        android:text="@string/betRedLabelText"
+        app:layout_constraintBottom_toTopOf="@+id/betBlackLabel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/betBlackLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/betBlackLabelText"
+        app:layout_constraintBottom_toTopOf="@+id/betOddLabel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/betOddLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/betOddLabelText"
+        app:layout_constraintBottom_toTopOf="@+id/betEvenLabel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/betEvenLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="80dp"
+        android:text="@string/betEvenLabelText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/moneyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moneyLabelText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.886"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <Button
+        android:id="@+id/betButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/betText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startButton" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/newGameButtonText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.853"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/money" />
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/moneyText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.784"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16"
+        app:srcCompat="@drawable/roulettewheel" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="234dp"
+        android:layout_height="239dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/gaugeneedle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

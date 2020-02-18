@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Gold&amp;Rule</string>
+    <string name="rouletteText">Roulette Game</string>
+    <string name="moneyText">$1000</string>
+    <string name="betText">SPIN</string>
+    <string name="newGameButtonText">New Game</string>
+    <string name="betBlackText"></string>
+    <string name="betLowText"></string>
+    <string name="betMidText"></string>
+    <string name="betHighText"></string>
+    <string name="betRedText"></string>
+    <string name="betOddText"></string>
+    <string name="betEvenText"></string>
+    <string name="betOneLabelText">Bet #</string>
+    <string name="betRedLabelText">Bet Red</string>
+    <string name="betBlackLabelText">Bet Black</string>
+    <string name="betOddLabelText">Bet Odd</string>
+    <string name="betEvenLabelText">Bet Even</string>
+    <string name="betTwoLabelText">Bet #</string>
+    <string name="betLowLabelText">Bet (1-12)</string>
+    <string name="betMidLabelText"> Bet (13-24)</string>
+    <string name="betHighLabelText">Bet (25-36)</string>
+    <string name="moneyLabelText">Current Cash Balance</string>
+    <string name="betOneText"></string>
+</resources>
